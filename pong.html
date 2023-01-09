@@ -12,7 +12,26 @@
         <script src="./dist/pong.js"></script>
     </head>
     <body>
-        <h1>Pong</h1>
-        <svg id="canvas" width="600" height="600"/>
+        <h1> &#9917 PONG &#9917</h1>
+        <svg id="canvas" width="600" height="600" style ="background-color: black;">
+            <g id = "border" transform = "translate(300,250)">
+                <line x1 ="0" y1 ="-600" x2="0" y2 ="600"
+                style = "stroke: yellow;
+                stroke-width: 10px;
+                stroke-dasharray: 60 25;
+                stroke-dashoffset: 10;">
+            </line>
+            </g>
+        </svg>
+        <div id = " controls">
+            <h2>Controls: &#9787</h2>
+        <table>
+            <tr><td>Go Up:</td><td><div id=" letter w" >&#87;</div></td></tr>
+            <tr><td>Go Down: </td><td><div id="letter s">&#83;</div></td></tr>
+            <tr><td>Restart Game:</td><td><div id="letter r">&#82;</div></td></tr>
+            <tr><td>(Only when game ends)</td></tr>
+            <tr><td>Tip: Try aiming the ball in the middle of the paddle to increase ball speed!</td></tr>
+        </table>
+        </div>
     </body>
 </html>
